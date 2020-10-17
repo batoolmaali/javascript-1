@@ -1,0 +1,69 @@
+ <html>
+ <head>
+ 
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+*{
+margin: 0px;
+padding: 0px;
+}
+section{
+align-items: center;
+justify-content: center;
+font-size: 32px;
+height: 600px;
+letter-spacing: 8px;
+text-transform: uppercase;
+display: flex;
+}
+.section1{
+    background-color: darkkhaki;
+}
+.section2{
+    background-color: rgb(224, 118, 224);
+}
+.section3{
+    background-color:darkgray;
+}
+.section4{
+    background-color: lightskyblue;
+}
+
+.to-top{
+   
+    position: fixed;
+    bottom: 20px;
+    right: 32px;
+    display: flex;
+    font-size: 32px;
+   
+   
+}
+.to-top.active{
+bottom: 50px;
+pointer-events: auto;
+opacity: 1;
+}
+</style>
+
+</head>
+
+
+<body>
+<section class="section1">section1</section>
+<section class="section2">section2</section>
+<section class="section3">section3</section>
+<section class="section4">section4</section>
+ <a href="#"  class="to-top"> <i class="fa fa-arrow-circle-up  fa-4x" aria-hidden="true"> </i>  </a>
+</body>
+<script>
+    const totop=document.querySelector(".to-top");
+    window.addEventListener("scroll",()=>{
+    if(window.pageYOffset > 100){
+     totop.classList.add("active");}
+    else{
+    totop.classList.remove("active");}
+     }
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<select onchange="selectChange()" id="select1">
+    <option value="image">image</option>
+    <option value="text">text</option>
+   
+
+</select>
+
+<img id="Image" style="width: 300px;" height="300px" >
+
+
+<script>
+
+function selectChange() {
+var val = document.getElementById("select1").value;
+console.log(val)
+if(val == "image"){
+document.getElementById("Image").src = "images/flower.jpg"
+    }
+}
+</script>
+
+</body>
+</html>

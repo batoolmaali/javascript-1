@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+
+</head>
+<h1>talk abuot your self in 6 words</h1>
+<body>
+<form name="myform" method="post" action="">
+    <textarea name="inpString" id="textword"cols="49" rows="4"></textarea>
+    <br />
+    <input type="button" name="Count" value="Calculate" onClick="countNoOfWords();">  
+    <input name="noofwords" type="text" value="" >
+    
+</form>
+<table>
+<tr>
+  <td> <input type="button" name="Count" value="word length more than 6" onClick="wor();"></td>  
+  <td> <input type="text" id="word-check"> </td>
+</tr>
+</table>
+
+</body>
+
+
+<script>
+    function countNoOfWords() {
+
+     document.myform.noofwords.value = document.myform.inpString.value.split(' ').length + " words";
+     }
+
+function wor(){
+       var str = document.getElementById("textword").value;
+         var splitted = str.split(" ").length;
+       
+         if ( splitted>6) {
+         text = "Input ok";
+         } else {
+         text = "Input not valid";
+  }
+document.getElementById("word-check").value=text;
+         
+}
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #2: Changing colors</title>
+    <style>
+        #mydiv {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+ 
+    function onl (){
+    document.getElementById ("mydiv").style.backgroundColor= "blue";
+    var x = document.getElementById("mydiv");
+    x.addEventListener ("click", myFunction);
+    x.addEventListener ("dblclick", mySecondFunction);
+    x.addEventListener ("mouseout", myThirdFunction);
+ 
+function myFunction() {
+  document.getElementById("mydiv").style.backgroundColor="red";
+}
+
+function mySecondFunction() {
+  document.getElementById("mydiv").style.backgroundColor="green";
+}
+
+function myThirdFunction() {
+  document.getElementById("mydiv").style.backgroundColor="blue";
+}
+
+    }
+ </script>
+</head>
+<body onload="onl()">
+<div id="mydiv"></div>
+
+
+</body>
+</html>
