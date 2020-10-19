@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+   <ul id="select" style="border: 1px solid black;"> 
+       <li>amman1</li>
+       <li>amman2</li>
+       <li>amman3</li>
+   </ul>
+
+
+ <button type="button" onclick="remove()"> remove </button>
+
+</body>
+<script>
+function remove() {
+var x= document.getElementById("select");
+
+x.removeChild(x.childNodes[0]);
+
+    }
+
+
+
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<img id="myimage"src="" style="width: 400px; height: 400px;">
+<button type="button" onclick="changeImage()">changeImage</button>
+
+
+</body>
+<script>
+   var x= document.getElementById("myimage");
+   
+   var images=[
+   'https://th.bing.com/th/id/OIP.nzi50Mn_dliNGdgzkKr0fgHaE8?pid=Api&rs=1',
+  'https://pixnio.com/free-images/flora-plants/flowers/pink-flower.jpg',
+   'https://jooinn.com/images/red-daisy-6.jpg'
+   ]
+    
+function changeImage() { 
+    var myRrandomNum = Math.floor(Math.random()*images.length);
+
+    x.src= images[myRrandomNum];
+};
+
+
+
+</script>
+
